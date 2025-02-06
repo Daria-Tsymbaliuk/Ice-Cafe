@@ -1,1 +1,49 @@
 @use '../utils/variables' as *;
+
+.section-title {
+    font-family: "Titan One", serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: $textColor;
+}
+
+.section-subtitle {
+    font-family: "Titan One", serif;
+    font-weight: 400;
+    font-size: 58px;
+    color: $mainTextColor;
+}
+
+.description-text {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.description-light {
+    font-size: 14px;
+    color: $lightGrayColor;
+}
+
+.description-btn {
+    font-family: "DM Sans", serif;
+    width: 176px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 22px;
+    color: $mainTextColor;
+}
+
+.about-number {
+    font-family: "Titan One", serif;
+    font-weight: 400;
+    font-size: 58px;
+    color: $mainTextColor;
+}
+
+.about-text {
+    font-family: "DM Sans", serif;
+    font-weight: 700;
+    font-size: 16px;
+}
