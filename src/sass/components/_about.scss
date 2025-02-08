@@ -7,30 +7,45 @@
 .section-title {
     font-family: "Titan One", serif;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
     color: $textColor;
 }
 
 .section-subtitle {
     font-family: "Titan One", serif;
     font-weight: 400;
-    font-size: 58px;
+    width: 200px;
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: center;
     color: $mainTextColor;
 }
 
 .description {
-    background-image: url(/src/images/sectionbg1.png);
+    background-image: url(../images/sectionbg1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 340px;
+}
+
+.description-img {
+    width: 280px;
+    height: 279px;
 }
 
 .description-text {
     font-family: "DM Sans", serif;
     font-weight: 500;
+    width: 220px;
     font-size: 16px;
-}
 
-.description-light {
-    font-size: 14px;
-    color: $lightGrayColor;
+    &-light {
+        font-size: 14px;
+        color: $lightGrayColor;
+    }
+
 }
 
 .description-btn {
@@ -51,11 +66,33 @@
 
 }
 
+.about-item {
+    padding: 19px 0;
+}
+
+.about-img {
+    height: 50px;
+
+    &-icon1 {
+        width: 33px;
+    }
+
+    &-icon2 {
+        width: 50px;
+    }
+
+    &-icon3 {
+        width: 44px;
+    }
+}
+
 .about-number {
     font-family: "Titan One", serif;
     font-weight: 400;
     font-size: 58px;
     color: $mainTextColor;
+    padding-top: 16px;
+    padding-bottom: 19px;
 }
 
 .about-text {
