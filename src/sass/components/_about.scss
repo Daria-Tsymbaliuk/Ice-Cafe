@@ -28,19 +28,23 @@
     color: $mainTextColor;
 }
 
-.description {
+.wrapper-content {
     background-image: url(../images/sectionbg1.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.description-img {
+.wrapper-content-img {
     width: 280px;
     height: 279px;
+    margin-bottom: 46px;
 }
 
-.description-text {
+.wrapper-content-text {
     font-family: "DM Sans", serif;
     font-weight: 500;
     width: 220px;
@@ -48,16 +52,18 @@
 
     &-light {
         font-size: 14px;
+        margin-top: 33px;
         color: $lightGrayColor;
     }
 
 }
 
-.description-btn {
+.wrapper-content-btn {
     font-family: "DM Sans", serif;
     width: 176px;
     height: 44px;
     font-weight: 700;
+    margin-top: 22px;
     font-size: 16px;
     border-radius: 22px;
     color: $mainTextColor;
@@ -71,24 +77,8 @@
 
 }
 
-.about-item {
-    padding: 19px 0;
-}
-
-.about-img {
-    height: 50px;
-
-    &-plant {
-        width: 33px;
-    }
-
-    &-fruits {
-        width: 50px;
-    }
-
-    &-lollipop {
-        width: 44px;
-    }
+.about-item { 
+    margin-bottom: 38px;
 }
 
 .about-number {
@@ -96,8 +86,8 @@
     font-weight: 400;
     font-size: 58px;
     color: $mainTextColor;
-    padding-top: 16px;
-    padding-bottom: 19px;
+    margin-top: 16px;
+    letter-spacing: 1.44px;
 }
 
 .about-text {
