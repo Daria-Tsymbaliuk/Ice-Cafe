@@ -2,14 +2,15 @@
 
 .about {
     background-color: $aboutBcgColor;
+    padding-top: 125px;
+    padding-bottom: 97px;
 }
 
 .section-title {
     font-family: "Titan One", serif;
     font-weight: 400;
     font-size: 18px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     color: $textColor;
 }
 
@@ -18,8 +19,12 @@
     font-weight: 400;
     width: 200px;
     font-size: 34px;
-    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 26px;
     text-align: center;
+    text-transform: uppercase;
     color: $mainTextColor;
 }
 
@@ -73,15 +78,15 @@
 .about-img {
     height: 50px;
 
-    &-icon1 {
+    &-plant {
         width: 33px;
     }
 
-    &-icon2 {
+    &-fruits {
         width: 50px;
     }
 
-    &-icon3 {
+    &-lollipop {
         width: 44px;
     }
 }
