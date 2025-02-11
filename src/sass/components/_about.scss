@@ -2,68 +2,42 @@
 
 .about {
     background-color: $aboutBcgColor;
-    padding-top: 125px;
-    padding-bottom: 97px;
 }
 
 .section-title {
     font-family: "Titan One", serif;
     font-weight: 400;
-    font-size: 18px;
-    text-align: center;
+    font-size: 30px;
     color: $textColor;
 }
 
 .section-subtitle {
     font-family: "Titan One", serif;
     font-weight: 400;
-    width: 200px;
-    font-size: 34px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 26px;
-    text-align: center;
-    text-transform: uppercase;
+    font-size: 58px;
     color: $mainTextColor;
 }
 
-.wrapper-content {
-    background-image: url(../images/sectionbg1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 0 340px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.description {
+    background-image: url(/src/images/sectionbg1.png);
 }
 
-.wrapper-content-img {
-    width: 280px;
-    height: 279px;
-    margin-bottom: 46px;
-}
-
-.wrapper-content-text {
+.description-text {
     font-family: "DM Sans", serif;
     font-weight: 500;
-    width: 220px;
     font-size: 16px;
-
-    &-light {
-        font-size: 14px;
-        margin-top: 33px;
-        color: $lightGrayColor;
-    }
-
 }
 
-.wrapper-content-btn {
+.description-light {
+    font-size: 14px;
+    color: $lightGrayColor;
+}
+
+.description-btn {
     font-family: "DM Sans", serif;
     width: 176px;
     height: 44px;
     font-weight: 700;
-    margin-top: 22px;
     font-size: 16px;
     border-radius: 22px;
     color: $mainTextColor;
@@ -77,51 +51,11 @@
 
 }
 
-.about-list {
-    margin-top: 39px;
-}
-
-.about-item { 
-    margin-bottom: 38px;
-
-    &:nth-child(1)::before {
-        content: '';
-        display: block;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(../images/icon1.png);
-        width: 33px;
-        height: 50px;
-    }
-
-    &:nth-child(2)::before {
-        content: '';
-        display: block;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(../images/icon2.png);
-        width: 50px;
-        height: 50px;
-    }
-
-    &:nth-child(3)::before {
-        content: '';
-        display: block;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(../images/icon3.png);
-        width: 44px;
-        height: 50px;
-    }
-}
-
 .about-number {
     font-family: "Titan One", serif;
     font-weight: 400;
     font-size: 58px;
     color: $mainTextColor;
-    margin-top: 16px;
-    letter-spacing: 1.44px;
 }
 
 .about-text {
