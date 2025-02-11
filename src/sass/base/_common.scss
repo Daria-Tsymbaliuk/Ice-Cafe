@@ -1,5 +1,8 @@
 @use '../utils/variables' as *;
 @import '~node_modules/modern-normalize/modern-normalize.css';
+body{
+    font-family: $primaryFont;
+}
 .container {
     padding: 0 15px;
     margin: 0 auto;

@@ -1,1 +1,68 @@
 @use '../utils/variables' as *;
+
+.header{
+    position: absolute;
+    width: 100%;
+    top: 6px;
+}
+.header-box{
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav {
+    @media screen and (max-width:1199px){
+        display: none;
+    }
+}
+.header-list {
+    @media screen and (max-width:1199px){
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+    @media screen and (min-width:$desktop){
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+    }
+  
+}
+.header-btn-open {
+    border: 0;
+    background: transparent;
+    fill: $mainTextColor;
+    @media screen and (min-width:$desktop){
+        display: none;
+    }
+    
+}
+
+.btn-buy-now {
+    width: 209px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    color: $mainTextColor;
+    background-color: $whiteColor;
+    @media screen and (max-width:767px){
+        display: none;
+    }
+    @media screen and (min-width:$tablet){
+        width: 160px;
+    }
+    @media screen and (min-width:$desktop){
+        width: 159px;
+    }
+}
+.header-btn-arrow-svg {
+    margin-top: 2px;
+    fill:  $mainTextColor;
+    // stroke: $mainTextColor;
+    // stroke-width: 2;
+}
+
