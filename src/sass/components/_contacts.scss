@@ -1,1 +1,91 @@
 @use '../utils/variables' as *;
+
+.contacts {
+    background-color: $aboutBcgColor;
+}
+
+.contacts-item {
+    background-color: $whiteColor;
+    border-radius: 24px;
+    width: 220px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px 0 rgba(212, 20, 67, 0.1), 0 6px 20px 0 rgba(212, 20, 67, 0.1);
+}
+
+.contacts-textbox {
+    padding: 43px 19px;
+}
+
+.contacts-title {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    width: 80px;
+    height: 16px;
+    font-size: 12px;
+    margin-bottom: 25px;
+    color: $whiteColor;
+    background-color: $cofeeBcgColor;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-green {
+        width: 130px;
+        background-color: $milkshakeBcgColor;
+    }
+}
+
+.contacts-location {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.contacts-description {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    width: 179px;
+    font-size: 12px;
+    padding: 5px 0;
+    color: $lightGrayColor;
+}
+
+.contacts-schedule {
+
+    &::after,
+    &::before {
+        content: "";
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 25px 0;
+        border-bottom: 1px solid $lineColor;
+    }
+}
+
+.schedule-item {
+    padding: 5px 0;
+}
+
+.contacts-day {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.contacts-time {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: $textColor;
+}
+
+.contacts-info {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    width: 179px;
+    font-size: 12px;
+    color: $lightGrayColor;
+}
