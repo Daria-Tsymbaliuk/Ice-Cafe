@@ -38,15 +38,6 @@
 }
 
 .btn-buy-now {
-    @media screen and (max-width:767px){
-        display: none;
-    }
-    @media screen and (min-width:$tablet){
-        width: 160px;
-    }
-    @media screen and (min-width:$desktop){
-        width: 159px;
-    }
     width: 209px;
     display: flex;
     flex-direction: row;
@@ -58,6 +49,15 @@
     font-size: 16px;
     color: $mainTextColor;
     background-color: $whiteColor;
+    @media screen and (max-width:767px){
+        display: none;
+    }
+    @media screen and (min-width:$tablet){
+        width: 160px;
+    }
+    @media screen and (min-width:$desktop){
+        width: 159px;
+    }
 }
 .header-btn-arrow-svg {
     margin-top: 2px;
