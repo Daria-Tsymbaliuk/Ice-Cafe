@@ -1,1 +1,100 @@
 @use '../utils/variables' as *;
+
+.contacts {
+    padding-top: 86px;
+    padding-bottom: 113px;
+    background-color: $aboutBcgColor;
+}
+
+.contacts-list {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-item {
+    background-color: $whiteColor;
+    border-radius: 24px;
+    width: 220px;
+    padding: 43px 19px;
+    box-shadow: 0 4px 8px 0 rgba(212, 20, 67, 0.1), 0 6px 20px 0 rgba(212, 20, 67, 0.1);
+}
+
+.contacts-title {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    width: 80px;
+    height: 16px;
+    font-size: 12px;
+    margin-bottom: 25px;
+    color: $whiteColor;
+    background-color: $cofeeBcgColor;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-green {
+        width: 130px;
+        background-color: $milkshakeBcgColor;
+    }
+}
+
+.contacts-location {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.contacts-description {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    width: 179px;
+    font-size: 12px;
+    margin-top: 5px;
+    color: $lightGrayColor;
+}
+
+.contacts-schedule {
+
+    &::after,
+    &::before {
+        content: "";
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 25px 0;
+        border-bottom: 1px solid $lineColor;
+    }
+}
+
+.schedule-item {
+    &:nth-child(1){
+        margin-bottom: 10px;
+    }    
+}
+
+.contacts-day {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.contacts-time {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+    color: $textColor;
+}
+
+.contacts-info {
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    width: 179px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: $lightGrayColor;
+}

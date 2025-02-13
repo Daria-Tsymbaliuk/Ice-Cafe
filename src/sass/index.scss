@@ -1,4 +1,5 @@
 @use './utils/variables' as *;
+@use './utils/hidden' as *;
 @use './base/reset' as *;
 @use './base/common' as *;
 @use './components/header' as *;
