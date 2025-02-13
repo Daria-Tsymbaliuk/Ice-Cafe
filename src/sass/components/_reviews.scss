@@ -1,15 +1,32 @@
-.reviews{
-  padding-top: 80px; 
+@use '../utils/variables' as *;
+
+.reviews {
+  padding-top: 80px;
   padding-bottom: 86px;
 }
 
-.reviews-quote-container{
+.reviews-quote-container {
   position: relative;
+  padding: 43px 83px 26px 83px;
+  background-color: #FAFAFA;
+
+  @media screen and (min-width: 480px) {
+    padding: 47px 78px 34px 78px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 47px 80px 34px 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 47px 87px 39px 89px;
+  }
 }
 
 .reviews-photo {
+  width: 85px;
+  height: 85px;
   display: block;
-  margin: 0 auto 72px;
+  margin: 0 auto 20px;
 }
 
 .reviews-text {
@@ -20,31 +37,59 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 2.6;
-  padding: 0 20%;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 2.1;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.9;
+  }
 }
 
 .reviews-name {
   text-align: center;
   font-size: 14px;
   font-weight: 500;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 2.1;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.9;
+  }
 }
 
 .reviews-svg-quote {
   position: absolute;
-  top: -5%;
-  left: 20%;
+  left: 25%;
+  top: 8%;
   fill: #e1e1e1;
   width: 54px;
   height: 40px;
+  
+  @media screen and (min-width: 480px) {
+    top: 15%;
+    left: 12%;
+  }
+  @media screen and (min-width: 768px) {
+    top: 19%;
+    left: 7%;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 8%;
+    top: 22%;
+  }
 }
 
 .prev,
 .next {
-  position: absolute;
-  top: 40%;
+  bottom: 0;
   width: auto;
-  padding: 30px 15px;
-  margin: 0 -175px;
+  padding: 15px 15px;
   color: #c7133e;
   font-size: 18px;
   transition: all 500ms ease-in-out;
@@ -64,7 +109,7 @@
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-.prev{
+.prev {
   left: 0;
 }
 

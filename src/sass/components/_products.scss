@@ -1,1 +1,80 @@
 @use '../utils/variables' as *;
+
+.products-list-item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 24px;
+    margin-top: 75%;
+
+    &:first-child {
+        background-color: #ffb8ca;
+    }
+
+    &:nth-child(2) {
+        background-color: #f0d1a5;
+    }
+
+    &:last-child {
+        background-color: #c2e297;
+    }
+}
+
+.products-title {
+    color: #FFA5BA;
+    text-align: center;
+    font-family: "Titan One";
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.products-subtitle {
+    color: #D41443;
+    text-align: center;
+    font-family: "Titan One";
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 1.36px;
+    text-transform: uppercase;
+}
+
+.products-name {
+    text-align: center;
+    color: #fff;
+    font-family: "Titan One";
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.products-svg-dots {
+    fill: rgb(255, 255, 255);
+    width: 58px;
+    height: 38px;
+    display: block;
+    margin: 0 auto;
+}
+
+.products-info-text {
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.56px;
+    padding: 0 40px 111px;
+}
+.products-svg-arrow{
+    background-color: #fff;
+    fill: #ff003c;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 13px;
+    position: absolute;
+    bottom: 9%;
+    left: 44%;
+}
