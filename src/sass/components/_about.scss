@@ -68,17 +68,17 @@
     }
 }
 
-.wrapper-content-img {
-    margin-bottom: 46px;
-    width: 280px;
-    height: 279px;
+// .wrapper-content-img {
+//     margin-bottom: 46px;
+//     width: 280px;
+//     height: 279px;
 
-    @media screen and (min-width:$tablet) {
-        width: 340px;
-        height: 339px;
-        margin-bottom: 0;
-    }
-}
+//     @media screen and (min-width:$tablet) {
+//         width: 340px;
+//         height: 339px;
+//         margin-bottom: 0;
+//     }
+// }
 
 .wrapper-content-text {
     font-family: "DM Sans", serif;
@@ -111,7 +111,7 @@
     }
 }
 
-.wrapper-content-btn {
+.about-btn {
     font-family: "DM Sans", serif;
     width: 176px;
     height: 44px;
