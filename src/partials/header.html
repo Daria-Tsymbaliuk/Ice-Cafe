@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="header">
     <div class="container ">
         <div class="header-box">
             <a href="#" class="logo-link">
@@ -23,17 +23,19 @@
                     </li>
                 </ul>
             </nav>
-            <button type="button" class="header-btn-open">
-                <svg class="header-menu" width="32" height="30">
-                    <use href="./images/symbol-defs.svg#three-lines"></use>
-                </svg>
-            </button>
-            <button type="button" class="btn-buy-now">
-                Buy now
-                <svg class="header-btn-arrow-svg" width="20" height="15">
-                    <use href="./images/symbol-defs.svg#arrow-right-small"></use>
-                </svg>
-            </button>
+            <div class="header-buttons">
+                <button type="button" class="header-btn-open" js-open-menu>
+                    <svg class="header-menu" width="32" height="30">
+                        <use href="./images/symbol-defs.svg#three-lines"></use>
+                    </svg>
+                </button>
+                <button type="button" class="btn-buy-now">
+                    Buy now
+                    <svg class="header-btn-arrow-svg" width="20" height="15">
+                        <use href="./images/symbol-defs.svg#arrow-right-small"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
 </header>

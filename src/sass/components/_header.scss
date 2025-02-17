@@ -4,10 +4,20 @@
     position: absolute;
     width: 100%;
     top: 6px;
+    @media screen and (min-width: $tablet) {
+        top: 36px;
+    }
 }
 .header-box{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.header-link {
+    display: block;
+    width: 199px;
+    height: 50px;
 }
 .header-nav {
     @media screen and (max-width:1199px){
@@ -27,7 +37,14 @@
     }
   
 }
+.header-buttons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 .header-btn-open {
+    display: flex;
+    justify-content: center;
     border: 0;
     background: transparent;
     fill: $mainTextColor;
@@ -38,6 +55,7 @@
 }
 
 .btn-buy-now {
+    padding: 20px;
     width: 209px;
     display: flex;
     flex-direction: row;
@@ -53,7 +71,12 @@
         display: none;
     }
     @media screen and (min-width:$tablet){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
         width: 160px;
+        height: 44px;
     }
     @media screen and (min-width:$desktop){
         width: 159px;
