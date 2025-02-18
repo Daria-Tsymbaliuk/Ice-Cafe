@@ -34,7 +34,7 @@
             display: block;
             width: 143px;
             height: 336px;
-            right: 320px;
+            right: 255px;
             top: 63px;
             background-image: url('../images/icecream-tab.png');
     }
@@ -42,8 +42,24 @@
     
 }
 
+      @media screen and (min-width: $desktop) {
+        height: 665px;
+        padding-top: 171px;
+        background-size: 538px;
+        background-position: 66% 52px;
+        background-image: url('../images/ellipse-desk.png');
+
+          &::after {
+           width: 236px;
+           height: 557px;
+           right: 410px;
+            top: 108px;
+           background-image: url("../images/icecream-desk.png");
+    }   
+
 }
 
+}
 .hero-content {
     position: absolute;
     z-index: 1;
@@ -64,6 +80,8 @@
     // }
     @media screen and (min-width:$desktop){
         width: 277px;
+        margin-bottom: 25px;
+        font-size: 38px;
     }
 }
 
@@ -74,11 +92,14 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $mainTextColor;
+
+    @media screen and (min-width:$desktop){
+        font-size: 58px;
+    }
 }
 
 .hero-btns-box{
     display: flex;
-    flex-direction: row;
     gap: 15px;
 }
 .hero-btn-red {
@@ -98,6 +119,12 @@
         &:focus {
             background-color: $whiteColor;
             color: $mainTextColor;
+        }
+
+        @media screen and (min-width:$desktop){
+            width: 104px;
+            height: 40px;
+            font-size: 14px;
         }
   
 }
@@ -119,6 +146,13 @@
     &:focus {
         background-color: $mainTextColor;
         color: $whiteColor;
+    }
+
+    
+    @media screen and (min-width:$desktop){
+        width: 138px;
+        height: 40px;
+        font-size: 14px;
     }
 }
 
@@ -184,18 +218,21 @@
 }
 
 .hero-list {
-    position: absolute;
-    top: 96px;
-    right: 0;
-    @media screen and (min-width: $desktop) {
-        top: 156px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // position: absolute;
+    // top: 96px;
+    // right: 0;
+    // @media screen and (min-width: $desktop) {
+    //     top: 156px;
+    // }
 }
 
 .hero-item {
     background-image: url('../images/small-elipse-tab.png');
-    background-position: 30% 0;
     background-repeat: no-repeat;
+    background-position-x: right;
     @media screen and (min-width: $desktop) {
         background-image: url('../images/small-elipse-desk.png');
     }
@@ -205,6 +242,7 @@
     font-family: $secondaryFont;
     font-size: 28px;
     color: $mainTextColor;
+    letter-spacing: 1.12px;
 
     @media screen and (min-width: $desktop) {
         font-size: 46px;
@@ -215,10 +253,28 @@
     font-size: 8px;
     line-height: 1.5;
     color: $whiteColor;
-
+    text-align: left;
     @media screen and (min-width: $desktop) {
         font-size: 14px;
         line-height: 1.4;
     }
 }
  
+.hero-woman-img {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        display: block;
+        right: 34px;
+        top: 266px;
+        width: 168px;
+        height: 133px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: 433px;
+        width: 293px;
+        height: 232px;
+    }
+}
