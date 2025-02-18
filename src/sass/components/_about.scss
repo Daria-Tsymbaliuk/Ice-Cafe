@@ -9,16 +9,25 @@
 .section-title {
     font-family: "Titan One", serif;
     font-weight: 400;
-    font-size: 18px;
     text-align: center;
     color: $textColor;
+
+    @media screen and (min-width:$mobile) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width:$tablet) {
+        font-size: 26px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        font-size: 30px;
+    }
 }
 
 .section-subtitle {
     font-family: "Titan One", serif;
     font-weight: 400;
-    width: 200px;
-    font-size: 34px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
@@ -26,6 +35,21 @@
     text-align: center;
     text-transform: uppercase;
     color: $mainTextColor;
+
+    @media screen and (min-width:$mobile) {
+        font-size: 34px;
+        width: 200px;
+    }
+
+    @media screen and (min-width:$tablet) {
+        font-size: 48px;
+        width: 429px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        font-size: 58px;
+        width: 534px;
+    }
 }
 
 .wrapper-content {
@@ -36,49 +60,95 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-position: 0 100%;
+
+    @media screen and (min-width:$tablet) {
+        flex-direction: row;
+        gap: 20px;
+    }
 }
 
-.wrapper-content-img {
-    width: 280px;
-    height: 279px;
-    margin-bottom: 46px;
-}
+// .wrapper-content-img {
+//     margin-bottom: 46px;
+//     width: 280px;
+//     height: 279px;
+
+//     @media screen and (min-width:$tablet) {
+//         width: 340px;
+//         height: 339px;
+//         margin-bottom: 0;
+//     }
+// }
 
 .wrapper-content-text {
     font-family: "DM Sans", serif;
     font-weight: 500;
-    width: 220px;
-    font-size: 16px;
+    line-height: 1.5;
 
     &-light {
         font-size: 14px;
         margin-top: 33px;
         color: $lightGrayColor;
+
+        @media screen and (min-width:$desktop) {
+            font-size: 14px;
+        }
     }
 
+    @media screen and (min-width:$mobile) {
+        width: 220px;
+        font-size: 12px;
+    }
+
+    @media screen and (min-width:$tablet) {
+        width: 340px;
+        font-size: 14px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        width: 463px;
+        font-size: 16px;
+    }
 }
 
-.wrapper-content-btn {
+.about-btn {
     font-family: "DM Sans", serif;
     width: 176px;
     height: 44px;
     font-weight: 700;
-    margin-top: 22px;
     font-size: 16px;
     border-radius: 22px;
     color: $mainTextColor;
     background-color: $whiteColor;
+    fill: $mainTextColor;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    margin: 17px auto 0 auto;
 
     &:hover,
     &:focus {
         background-color: $darkWhiteColor;
     }
 
+    @media screen and (min-width:$mobile) {
+        margin-top: 22px;
+    }
+
+    @media screen and (min-width:$tablet) {
+        margin-top: 62px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        margin-top: 45px;
+    }
 }
 
 .about-list {
     margin-top: 39px;
+
+    @media screen and (min-width:$tablet) {
+        display: flex;
+    }
 }
 
 .about-item { 
@@ -122,10 +192,28 @@
     color: $mainTextColor;
     margin-top: 16px;
     letter-spacing: 1.44px;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 36px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        margin-top: 40px;
+    }
 }
 
 .about-text {
     font-family: "DM Sans", serif;
     font-weight: 700;
     font-size: 16px;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 13px;
+        line-height: 1.7;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 15px;
+    }
+
 }
