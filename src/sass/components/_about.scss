@@ -120,6 +120,7 @@
     border-radius: 22px;
     color: $mainTextColor;
     background-color: $whiteColor;
+    fill: $mainTextColor;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
     margin: 17px auto 0 auto;
@@ -191,10 +192,28 @@
     color: $mainTextColor;
     margin-top: 16px;
     letter-spacing: 1.44px;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 36px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        margin-top: 40px;
+    }
 }
 
 .about-text {
     font-family: "DM Sans", serif;
     font-weight: 700;
     font-size: 16px;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 13px;
+        line-height: 1.7;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 15px;
+    }
+
 }
