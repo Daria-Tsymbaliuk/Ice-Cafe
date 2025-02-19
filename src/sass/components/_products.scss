@@ -9,8 +9,16 @@
     display: flex; 
     flex-direction: column; 
     align-items: center;
-    gap: 130px; 
+    gap: 150px;
     margin-top: 144px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 210px;
+    }
 }
 
 .products-list-item {
@@ -32,6 +40,13 @@
     &:last-child {
         background-color: #c2e297;
     }
+
+    @media screen and (min-width: 768px) {
+        width: 220px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 33%;
+    }
 }
 
 .products-title {
@@ -42,6 +57,13 @@
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+    }
 }
 
 .products-subtitle {
@@ -52,12 +74,26 @@
     font-weight: 400;
     letter-spacing: 1.36px;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+    }
 }
 
 .products-image{
     position: absolute; 
-    top: -135px;   
+    top: -135px;
     left: 4px;
+
+    @media screen and (min-width: 768px) {
+        top: -105px;
+    }
+    @media screen and (min-width: 1200px) {
+        top: -210px;
+    }
 }
 
 .products-name {
@@ -79,16 +115,27 @@
 }
 
 .products-info-text {
-    color: #FFF;
-    text-align: center;
-    font-family: "DM Sans";
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0.56px;
-    padding: 0 40px; 
-    margin-top: 30px;
+        margin-bottom: 32px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFF;
+        padding: 0 40px;
+
+        @media screen and (min-width: 768px) {
+            padding: 0 6px;
+    }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 60px;
+            font-size: 16px;
+            line-height: 1.7;
+            padding: 0 12px;
+    }
 }
+
 .products-svg-arrow{
     background-color: #fff;
     fill: #ff003c;
@@ -101,5 +148,5 @@
 .products-btn{
     display: block; 
     background: transparent; 
-    margin: 20px auto 0;
+    margin: 30px auto 0;
 }
