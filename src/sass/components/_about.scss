@@ -11,10 +11,7 @@
     font-weight: 400;
     text-align: center;
     color: $textColor;
-
-    @media screen and (min-width:$mobile) {
-        font-size: 18px;
-    }
+   font-size: 18px;
 
     @media screen and (min-width:$tablet) {
         font-size: 26px;
@@ -83,6 +80,7 @@
 .wrapper-content-text {
     font-family: "DM Sans", serif;
     font-weight: 500;
+    width: 220px;
     line-height: 1.5;
 
     &-light {
@@ -153,7 +151,6 @@
 
 .about-item { 
     margin-bottom: 38px;
-
     &:nth-child(1)::before {
         content: '';
         display: block;
@@ -163,7 +160,6 @@
         width: 33px;
         height: 50px;
     }
-
     &:nth-child(2)::before {
         content: '';
         display: block;
@@ -173,7 +169,6 @@
         width: 50px;
         height: 50px;
     }
-
     &:nth-child(3)::before {
         content: '';
         display: block;
@@ -184,7 +179,6 @@
         height: 50px;
     }
 }
-
 .about-number {
     font-family: "Titan One", serif;
     font-weight: 400;
@@ -196,7 +190,6 @@
     @media screen and (min-width: $tablet) {
         margin-top: 36px;
     }
-    
     @media screen and (min-width: $desktop) {
         margin-top: 40px;
     }
