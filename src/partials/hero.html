@@ -24,7 +24,7 @@
                         incididunt ut labore et</p>
                     <button type="button" class="hero-milk-btn">
                         <svg>
-                            <use href="./images/symbol-defs.svg#arrow-right-big"></use>
+                            <use xlink:href="./images/symbol-defs.svg#arrow-right-big"></use>
                         </svg>
                     </button>
                 </div>
@@ -42,6 +42,16 @@
                 </li>
             </ul>
         </div>
-        <img src="./images/woman-tab-1x.png" alt="happy woman who eats icecream" class="hero-woman-img ">
+        <picture>
+            <source srcset="
+                ./images/woman-desk-1x.png 1x,
+                ./images/woman-desk-2x.png  2x
+              " media="(min-width: 1200px)" />
+            <source srcset="
+                ./images/woman-tab-1x.png  1x,
+                ./images/woman-tab-2x.png  2x
+              " media="(min-width: 768px)" />
+              <img src="./images/woman-tab-1x.png" alt="happy woman who eats icecream" class="hero-woman-img ">
+        </picture>
     </div>
 </section>

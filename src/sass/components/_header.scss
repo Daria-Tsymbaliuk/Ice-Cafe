@@ -87,12 +87,11 @@
   font-size: 16px;
   color: $mainTextColor;
   background-color: $whiteColor;
-  transition: background-color 250ms ease-in;
+  transition: background-color 250ms ease-in, fill 250ms ease-in , color 250ms ease-in;
   &:hover,
   &:focus {
     background-color: $mainTextColor;
     color: $whiteColor;
-    fill: $whiteColor;
   }
   @media screen and (max-width: 767px) {
     display: none;
@@ -112,6 +111,12 @@
 .header-btn-arrow-svg {
   margin-top: 2px;
   fill: $mainTextColor;
+
+  .btn-buy-now:hover &,
+  .btn-buy-now:focus &{
+   fill: $whiteColor;
+  }
   // stroke: $mainTextColor;
   // stroke-width: 2;
+
 }
