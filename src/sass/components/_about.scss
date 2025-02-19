@@ -11,10 +11,7 @@
     font-weight: 400;
     text-align: center;
     color: $textColor;
-    
-    @media screen and (min-width:$mobile) {
-        font-size: 18px;
-    }
+   font-size: 18px;
 
     @media screen and (min-width:$tablet) {
         font-size: 26px;
@@ -28,8 +25,6 @@
 .section-subtitle {
     font-family: "Titan One", serif;
     font-weight: 400;
-    width: 200px;
-    font-size: 34px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
@@ -69,6 +64,18 @@
         gap: 20px;
     }
 }
+
+// .wrapper-content-img {
+//     margin-bottom: 46px;
+//     width: 280px;
+//     height: 279px;
+
+//     @media screen and (min-width:$tablet) {
+//         width: 340px;
+//         height: 339px;
+//         margin-bottom: 0;
+//     }
+// }
 
 .wrapper-content-text {
     font-family: "DM Sans", serif;
@@ -183,7 +190,6 @@
     @media screen and (min-width: $tablet) {
         margin-top: 36px;
     }
-
     @media screen and (min-width: $desktop) {
         margin-top: 40px;
     }

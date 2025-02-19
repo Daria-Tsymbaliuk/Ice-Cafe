@@ -10,6 +10,7 @@
     background-position-x: right;
     background-position-y: center; 
     background-color: $heroBcgColor;
+
     &::after{
         content:" ";
         display: block;
@@ -19,11 +20,46 @@
         position: absolute;
         top: 92;
         right: 30;
-      
-      
     }
+
+    @media screen and (min-width:$tablet){
+        height: 399px;
+        padding-top: 94px;
+        background-size: 324px 322px;
+        background-position: 66% 31px;
+        background-image: url('../images/elipse-tab.png');
+
+        &::after{
+            content:" ";
+            display: block;
+            width: 143px;
+            height: 336px;
+            right: 255px;
+            top: 63px;
+            background-image: url('../images/icecream-tab.png');
+    }
+    
+    
 }
 
+      @media screen and (min-width: $desktop) {
+        height: 665px;
+        padding-top: 171px;
+        background-size: 538px;
+        background-position: 66% 52px;
+        background-image: url('../images/ellipse-desk.png');
+
+          &::after {
+           width: 236px;
+           height: 557px;
+           right: 410px;
+            top: 108px;
+           background-image: url("../images/icecream-desk.png");
+    }   
+
+}
+
+}
 .hero-content {
     position: absolute;
     z-index: 1;
@@ -37,14 +73,15 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $whiteColor;
-    @media screen and (max-width:767px){
-        width: 218px;
-    }
-    @media screen and (max-width:1199px){
-        width: 162px;
-    }
-    @media screen and (min-width:1200px){
+    width: 218px;
+ 
+    // @media screen and (min-width:$tablet){
+    //     width: 163px;
+    // }
+    @media screen and (min-width:$desktop){
         width: 277px;
+        margin-bottom: 25px;
+        font-size: 38px;
     }
 }
 
@@ -55,11 +92,14 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $mainTextColor;
+
+    @media screen and (min-width:$desktop){
+        font-size: 58px;
+    }
 }
 
 .hero-btns-box{
     display: flex;
-    flex-direction: row;
     gap: 15px;
 }
 .hero-btn-red {
@@ -79,6 +119,12 @@
         &:focus {
             background-color: $whiteColor;
             color: $mainTextColor;
+        }
+
+        @media screen and (min-width:$desktop){
+            width: 104px;
+            height: 40px;
+            font-size: 14px;
         }
   
 }
@@ -101,20 +147,134 @@
         background-color: $mainTextColor;
         color: $whiteColor;
     }
+
+    
+    @media screen and (min-width:$desktop){
+        width: 138px;
+        height: 40px;
+        font-size: 14px;
+    }
 }
-// .hero-milk-img{
-//     width: 188px;
-//     height: 177px;
-// }
-.hero-list{
+
+.hero-thumb{
     @media screen and (max-width:767px){
         display: none;
+    }
+}
+.hero-box-milk{
+    @media screen and (max-width:767px){
+        display: none;
+    }
+    display: flex;
+    // align-items: flex-end;
+    
+}
+
+.flex-button-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: end;
+    justify-content: end;
+}
+
+.hero-info {
+    width: 114px;
+    font-size: 8px;
+    line-height: 1.5;
+    color: $whiteColor;
+
+    @media screen and (min-width: $desktop) {
+        width: 200px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+.hero-milk-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $whiteColor;
+    fill: $mainTextColor;
+    border: 0;
+
+    @media screen and (min-width: $desktop) {
+        width: 26px;
+        height: 26px;
+        margin-bottom: 11px;
+    }
+}
+.hero-milk-img {
+    width: 124px;
+    height: 126px;
+
+    @media screen and (min-width: $desktop) {
+        width: 188px;
+        height: 191px;
+    }
+}
+
+.hero-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // position: absolute;
+    // top: 96px;
+    // right: 0;
+    // @media screen and (min-width: $desktop) {
+    //     top: 156px;
+    // }
+}
+
+.hero-item {
+    background-image: url('../images/small-elipse-tab.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    @media screen and (min-width: $desktop) {
+        background-image: url('../images/small-elipse-desk.png');
+    }
+}
+
+.hero-number {
+    font-family: $secondaryFont;
+    font-size: 28px;
+    color: $mainTextColor;
+    letter-spacing: 1.12px;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 46px;
     }
 }
 
 .hero-text {
-    @media screen and (max-width:767px){
-        display: none;
+    font-size: 8px;
+    line-height: 1.5;
+    color: $whiteColor;
+    text-align: left;
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.4;
     }
 }
  
+.hero-woman-img {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        display: block;
+        right: 34px;
+        top: 266px;
+        width: 168px;
+        height: 133px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        top: 433px;
+        width: 293px;
+        height: 232px;
+    }
+}
