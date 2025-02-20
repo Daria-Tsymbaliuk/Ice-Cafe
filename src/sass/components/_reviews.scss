@@ -1,13 +1,14 @@
 @use '../utils/variables' as *;
 
 .reviews {
+  position: relative;
   padding-top: 80px;
   padding-bottom: 86px;
 }
 
 .reviews-quote-container {
   position: relative;
-  padding: 43px 83px 26px 83px;
+  padding: 43px 75px 26px;
   background-color: #FAFAFA;
 
   @media screen and (min-width: 480px) {
