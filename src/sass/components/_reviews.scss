@@ -88,9 +88,10 @@
 
 .prev,
 .next {
-  bottom: 0;
+  position: absolute;
+  top: 50%;
   width: auto;
-  padding: 15px 15px;
+  padding: 20px 20px;
   color: #c7133e;
   font-size: 18px;
   transition: all 500ms ease-in-out;
@@ -107,11 +108,11 @@
 }
 
 .next {
-  right: 0;
+  right: 25%;
   border-radius: 3px 0 0 3px;
 }
 .prev {
-  left: 0;
+  left: 25%;
 }
 
 .dot {
