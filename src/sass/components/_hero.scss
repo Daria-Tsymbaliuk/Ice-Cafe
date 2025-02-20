@@ -108,7 +108,7 @@
   border: 0;
   font-weight: 400;
   font-size: 8px;
-  transition: background-color 250ms ease-in, color 250ms ease-in;
+  transition: background-color  250ms ease-in, color  250ms ease-in;
   background-color: $mainTextColor;
   color: $whiteColor;
   &:hover,
@@ -169,7 +169,6 @@
   display: flex;
   flex-direction: column;
   gap: 7px;
-  align-items: end;
   justify-content: end;
 }
 
@@ -195,6 +194,13 @@
   background-color: $whiteColor;
   fill: $mainTextColor;
   border: 0;
+  transition: background-color 250ms ease-in, fill 250ms ease-in;
+
+  &:hover,
+  &:focus {
+    background-color: $mainTextColor;
+    fill: $whiteColor;
+  }
 
   @media screen and (min-width: $desktop) {
     width: 26px;
