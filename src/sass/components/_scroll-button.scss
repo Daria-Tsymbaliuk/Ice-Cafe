@@ -1,0 +1,102 @@
+@use '../utils/variables' as *;
+
+
+
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: $whiteColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.4s ease, background-color 0.3s ease, transform 0.3s ease;
+
+  &.visible {
+    opacity: 1;
+  }
+
+  &:hover {
+    background-color: $mainTextColor;
+  }
+
+  .arrow-icon {
+    fill: $mainTextColor;
+    transition: fill 0.3s ease;
+    width: 50%;
+    height: 50%;
+  }
+
+  &:hover .arrow-icon {
+    fill: $whiteColor;
+  }
+
+  .progress-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
+  }
+
+  .progress-ring__circle {
+    transition: stroke-dashoffset 0.35s ease, stroke 0.3s ease;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke: $mainTextColor;
+    stroke-width: 4;
+    r: 28;
+    cx: 30;
+    cy: 30;
+  }
+
+  &:hover .progress-ring__circle {
+    stroke: $whiteColor;
+  }
+
+  // 📱 **Адаптивність для різних екранів**
+  @media (max-width: 1024px) {
+    width: 50px;
+    height: 50px;
+    
+    .progress-ring__circle {
+      stroke-width: 3;
+      r: 23;
+      cx: 25;
+      cy: 25;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 45px;
+    height: 45px;
+
+    .progress-ring__circle {
+      stroke-width: 3;
+      r: 21;
+      cx: 22.5;
+      cy: 22.5;
+    }
+  }
+
+  @media (max-width: 480px) {
+    width: 40px;
+    height: 40px;
+
+    .progress-ring__circle {
+      stroke-width: 3;
+      r: 18;
+      cx: 20;
+      cy: 20;
+    }
+  }
+}
