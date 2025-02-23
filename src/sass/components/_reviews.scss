@@ -1,13 +1,14 @@
 @use '../utils/variables' as *;
 
 .reviews {
+  position: relative;
   padding-top: 80px;
   padding-bottom: 86px;
 }
 
 .reviews-quote-container {
   position: relative;
-  padding: 43px 83px 26px 83px;
+  padding: 43px 75px 26px;
   background-color: #FAFAFA;
 
   @media screen and (min-width: 480px) {
@@ -87,9 +88,10 @@
 
 .prev,
 .next {
-  bottom: 0;
+  position: absolute;
+  top: 40%;
   width: auto;
-  padding: 15px 15px;
+  padding: 20px 20px;
   color: #c7133e;
   font-size: 18px;
   transition: all 500ms ease-in-out;
@@ -104,14 +106,20 @@
     display: none;
   }
 }
-
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+right: 5%;
+border-radius: 3px 0 0 3px;
+@media screen and (min-width: 1025px) {
+right: 10%;
+}
 }
 .prev {
-  left: 0;
+left: 5%;
+@media screen and (min-width: 1025px) {
+left: 10%;
 }
+}
+
 
 .dot {
   height: 15px;
