@@ -1,13 +1,3 @@
-const iframeEl = document.getElementById("map");
-const buttonEl = document.getElementById("mode-map-btn");
-
-buttonEl.addEventListener("click", () => {
-  if (iframeEl.style.filter === "invert(100%)") {
-    iframeEl.style.filter = "";
-  } else {
-    iframeEl.style.filter = "invert(100%)";
-  }
-});
 
 // scroll btn
 const backToTopBtn = document.getElementById("backToTopBtn");
@@ -18,10 +8,6 @@ const circumference = 2 * Math.PI * radius;
 circle.style.strokeDasharray = `${circumference} ${circumference}`;
 circle.style.strokeDashoffset = circumference;
 
-window.onload = function() {
-    // Скрити кнопку при завантаженні сторінки
-    backToTopBtn.style.display = "none";
-};
 
 window.onscroll = function() {
     const headerHeight = document.querySelector("header").offsetHeight;
