@@ -7,10 +7,19 @@
 }
 
 .contacts-list {
-    gap: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+    
+    @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+    gap: 29px;
+    }
 }
 
 .contacts-item {
@@ -19,6 +28,15 @@
     width: 220px;
     padding: 43px 19px;
     box-shadow: 0 4px 8px 0 rgba(212, 20, 67, 0.1), 0 6px 20px 0 rgba(212, 20, 67, 0.1);
+    
+    @media screen and (min-width:$tablet) {
+        padding: 50px 31px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        width: 330px;
+        padding: 52px 44px;
+    }
 }
 
 .contacts-title {
@@ -35,9 +53,20 @@
     justify-content: center;
     align-items: center;
 
+    @media screen and (min-width:$tablet) {
+        width: 73px;
+        height: 28px;
+        font-size: 16px;
+        border-radius: 6px;
+    }
+
     &-green {
         width: 130px;
         background-color: $milkshakeBcgColor;
+
+        @media screen and (min-width:$tablet) {
+            width: 138px;
+        }
     }
 }
 
@@ -45,6 +74,14 @@
     font-family: "DM Sans", serif;
     font-weight: 500;
     font-size: 12px;
+
+    @media screen and (min-width:$tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        font-size: 16px;
+    }
 }
 
 .contacts-description {
@@ -54,6 +91,16 @@
     font-size: 12px;
     margin-top: 5px;
     color: $lightGrayColor;
+
+    @media screen and (min-width:$tablet) {
+        width: 145px;
+        font-size: 14px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        width: 243px;
+        font-size: 16px;
+    }
 }
 
 .contacts-schedule {
@@ -80,6 +127,14 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.8;
+
+    @media screen and (min-width:$tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        font-size: 16px;
+    }
 }
 
 .contacts-time {
@@ -88,6 +143,14 @@
     font-size: 12px;
     line-height: 1.8;
     color: $textColor;
+
+    @media screen and (min-width:$tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        font-size: 16px;
+    }
 }
 
 .contacts-info {
@@ -97,4 +160,14 @@
     font-size: 12px;
     line-height: 1.5;
     color: $lightGrayColor;
+
+    @media screen and (min-width:$tablet) {
+        width: 157px;
+        font-size: 14px;
+    }
+
+    @media screen and (min-width:$desktop) {
+        width: 243px;
+        font-size: 16px;
+    }
 }
