@@ -105,6 +105,10 @@
     @media screen and (min-width: $desktop) {
         gap: 50px;
     }
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 43px;
+    }
 }
 
 .footer-list {

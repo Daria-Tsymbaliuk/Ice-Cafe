@@ -1,4 +1,3 @@
-
 // scroll btn
 const backToTopBtn = document.getElementById("backToTopBtn");
 const circle = document.querySelector('.progress-ring__circle');
