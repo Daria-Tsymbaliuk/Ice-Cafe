@@ -2,6 +2,7 @@
 @use './utils/hidden' as *;
 @use './base/reset' as *;
 @use './base/common' as *;
+@use './components/header-menu' as *;
 @use './components/header' as *;
 @use './components/hero' as *;
 @use './components/products' as *;

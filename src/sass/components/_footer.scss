@@ -134,6 +134,12 @@
     padding: 6px;
     border-radius: 50%;
     background-color:  $textColor;
+    transition: background-color 250ms ease-in;
+
+    &:hover,
+    &:focus {
+        background-color: $mainTextColor;
+    }
 
     @media screen and (min-width: $tablet) {
         width: 34px;
@@ -146,12 +152,6 @@
     width: 32px;
     height: 32px;
     fill: $whiteColor;
-    transition: background-color 250ms ease-in;
-
-    &:hover,
-    &:focus {
-        background-color: $mainTextColor;
-    }
 
     @media screen and (min-width: $tablet) {
         width: 34px;

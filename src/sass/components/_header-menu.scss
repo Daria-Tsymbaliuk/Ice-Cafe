@@ -1,1 +1,116 @@
 @use '../utils/variables' as *;
+
+
+.header-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    padding:  60px 20px;
+    display: flex;
+    gap: 19px;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(101%);
+    opacity: 0;
+    background-color: $burgerBcgColor;
+    
+    @media screen and (min-width: $tablet) {
+        width: 35%;
+    }
+    
+}
+
+.header-menu.is-open{
+    transform: translateX(0%); 
+    opacity: 1;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-mob-buy {
+    display: flex;
+    margin-top: 23px;
+    background-color: $whiteColor;
+    border: 0;
+    margin-bottom: 23px;
+    width: 209px;
+    height: 44px;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    color: $mainTextColor;
+    transition: background-color, color, 250ms ease-in;
+
+    &:hover,
+    &:focus {
+        background-color: $mainTextColor;
+        color: $whiteColor;
+
+        .header-btn-mob-arrow {
+            fill: $whiteColor;
+        }
+    }   
+}
+.header-btn-mob-arrow {
+    fill: $mainTextColor;
+}
+.header-btn-close {
+   position: absolute;
+   top: 23px;
+   right: 28px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: transparent;
+   cursor: pointer;
+   border: none;
+   width: 40px;
+   height: 40px;
+
+   fill: $whiteColor;
+    
+    transition: fill  250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:active{
+        fill: $mainTextColor;
+    }
+}
+
+.header-mob-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+
+.header-mob-link {
+    font-weight: 700;
+    font-size: 14px;
+    color: $whiteColor;
+    text-align: left;
+    transition: color 250ms eas;
+
+    &:hover,
+    &:focus {
+        color: $mainTextColor;
+    }    
+}
+
+.header-mob-item:first-child:before,
+.header-mob-item::after {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 1px;
+  margin-top: 12px;
+  background-color: $burgerLinesColor;
+}
+.header-mob-item:first-child:before {
+    margin-bottom: 12px;
+}
